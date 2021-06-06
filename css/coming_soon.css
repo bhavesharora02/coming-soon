@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'BrushFont';
+  src: url('../fonts/Brush King.otf'); /* IE9 Compat Modes */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.coming-soon {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.coming-soon-heading h1 {
+  font-family: "BrushFont", cursive;
+  font-size: 4rem;
+  color: #10141d;
+  text-align: center;
+}
+
+.coming-soon-timeline {
+  padding: 0 280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 130px;
+  grid-gap: 30px;
+  text-align: center;
+}
+.timeline-card {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0px 20px 20px 4px rgba(0, 0, 0, 0.6);
+}
+.timeline-card h2 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+.timeline-card p {
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+.coming-soon-social {
+  display: flex;
+  justify-content: center;
+}
+.social-icons {
+  list-style-type: none;
+  display: flex;
+}
+.social-icons li {
+  margin-right: 1rem;
+}
+.social-icons li a {
+  display: block;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.6s;
+}
+.social-icons li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.social-icons a i {
+  font-size: 1.3rem;
+}
